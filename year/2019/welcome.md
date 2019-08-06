@@ -6,7 +6,7 @@ contact: general_chair@ieeevis.org
 ---
 
 redesign
-test 2
+test 2 . 2.0
 
 VIS 2019 will be the year’s premier forum for advances in theory, methods, and applications of visualization and visual analytics. The conference will convene an international community of researchers and practitioners from universities, government, and industry to exchange recent findings on the design and use of visualization tools. 
 
