@@ -1,7 +1,8 @@
 ---
 title: Call For Participation
-layout: page
+layout: landing
 permalink: /year/2019/info/call-participation/doctoral-colloquium
+sidebar: call-for-participation
 ---
 
 # IEEE VIS Doctoral Colloquium
