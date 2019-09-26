@@ -18,14 +18,15 @@
             {% assign is_active_class = 'menu_item--is-active' %}
             {% endif %}
 
-            <div class="menu_item {{is_active_class}} font-display text-lg md:text-base lg:text-lg px-8 md:px-2 lg:px-4 mx-0 lg:mx-2 py-4 md:py-6 border-b-2 border-primary-200 md:border-none"
+            <button class="menu_item {{is_active_class}} font-display text-lg md:text-base lg:text-lg px-8 md:px-2 lg:px-4 mx-0 lg:mx-2 py-4 md:py-6 border-b-2 border-primary-200 md:border-none"
+                tabindex="0" role="menuitem"
                 v-on:click="toggleMenuItems('{{ nav.dropdown }}')"
                 v-bind:class="{ 'menu_item--focused': menu['{{ nav.dropdown }}'] }">
-                <span class="whitespace-no-wrap" tabindex="0">{{ nav.dropdown }}
+                <span class="whitespace-no-wrap">{{ nav.dropdown }}
                 <i class="material-icons align-middle" v-if="menu['{{ nav.dropdown }}']">arrow_drop_down</i>
                 <i class="material-icons align-middle" v-else>arrow_right</i>
                 </span>
-            </div>
+            </button>
 
             <div class="dropdown md:flex" role="menu" aria-label="submenu" :aria-hidden="[isAriaHidden]" :aria-expanded="[isAriaExpanded]">
             {% for section in nav.sections %}

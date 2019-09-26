@@ -1,5 +1,9 @@
 /* Letter */
 
+.letter--image {
+    z-index: -1;
+}
+
 .letter {
     clip-path: polygon(100% 0, 100% 100%, 65px 100%, 0 92%, 0 0);
     @apply bg-white;
@@ -8,6 +12,7 @@
     @apply h-auto;
     @apply top-0 right-0;
     @apply text-primary;
+    @apply z-10;
 }
 
     @screen lg {

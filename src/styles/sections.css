@@ -6,29 +6,38 @@
     margin-bottom: 15px;
 }
 
-    .section::after {
-        content: "";
-        display: block;
-        position: absolute;
-        right: 0;
-        bottom: -29px; /* Fixes a 1px gap in Chrome */
-        height: 30px;
-        width: 30%;
-        clip-path: polygon(100% 0, 100% 100%, 30px 100%, 0 0);
-        background: inherit;
-    }
+    /* .section::after { */
+        /* content: ""; */
+        /* display: block; */
+        /* position: absolute; */
+        /* right: 0; */
+        /* bottom: -29px; Fixes a 1px gap in Chrome */
+        /* height: 30px; */
+        /* width: 30%; */
+        /* clip-path: polygon(100% 0, 100% 100%, 30px 100%, 0 0); */
+        /* background: inherit; */
+    /* } */
 
     @screen sm {
         .section {
             margin-bottom: 50px;
         }
 
-        .section::after {
-            height: 50px;
-            bottom: -49px; /* Fixes a 1px gap in Chrome */
-            clip-path: polygon(100% 0, 100% 100%, 50px 100%, 0 0);
-        }
+        /* .section::after { */
+            /* height: 50px; */
+            /* bottom: -49px; Fixes a 1px gap in Chrome */
+            /* clip-path: polygon(100% 0, 100% 100%, 50px 100%, 0 0); */
+        /* } */
     }
+
+.section--polygon {
+    @apply bg-primary;
+    @apply text-white;
+    width: 30%;
+    height: 40px;
+    /* height - 1 to fix gap in ie11 */
+    transform: translate(20px, 39px) skewX(40deg); 
+}
 
 
 .section--wrapper {
