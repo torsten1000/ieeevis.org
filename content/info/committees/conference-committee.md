@@ -204,3 +204,5 @@ permalink: /info/committees/conference-committee
 | Vijay Natarajan | *IISc Bangalore* |
 | Kristi Potter | *NREL* |
 | Paul Rosen | *University of Central Florida* |
+
+-
